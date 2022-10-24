@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/landingpage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+    <script src="./nav.js" defer></script>
+    <title>Spoococktails</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo"><a href="./index.html">Le Verre-Tige</a></div>
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+            </button>
+            <ul id="primary-navigation" class="nav primary-navigation" data-visible="false">
+                <li>
+                    <a href="./index.html">Home</a>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Cocktails</a>
+                    <div class="dropdown-content">
+                      <a href="./cocktail1.html">Vampire's Kiss</a>
+                      <a href="./cocktail2.html">Corpse Reviver n°2</a>
+                      <a href="./cocktail3.html">Virgin Bloody Mary</a>
+                    </div>
+                  </li>
+                <li>
+                    <a href="./about.html">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id ="main" class="container"><h1>Cocktails à la une</h1></div>
+    <section class="boxes">
+        <div class="container">
+            <div class="box box-1">
+                <a href="./cocktail1.html"><img class="illusbox" id="vampire" src="https://www.acouplecooks.com/wp-content/uploads/2021/08/Vampires-Kiss-Cocktail-004.jpg"/></a>
+                    <h3>Le mystérieux</h3>    
+                    <a href="./cocktail1.html">
+                        <h2>
+                            Vampire's Kiss
+                        </h2>
+                    </a>
+                    <a href="./cocktail1.html">
+                        <p class="caption">J'adore écrire des textes qui remplissent des espaces vides, si l'espace est vide je pète un câble.</p>
+                    </a>
+            </div>
+            <div class="box box-2">
+                <a href="./cocktail2.html"><img class="illusbox" src="https://www.acouplecooks.com/wp-content/uploads/2020/08/Corpse-Reviver-No-2-001.jpg"/></a>
+                <h3>L'élégant</h3>
+                <a href="./cocktail2.html"><h2>
+                    Corpse Reviver n°2
+                </h2></a>
+                <!-- <p>Une spécialité des rues de Caen, souvent imitée et tragiquement égalée aux mauvais dosages. </p> -->
+            </div>
+            <div class="box box-3">
+                <a href="./cocktail3.html"><img class="illusbox" src="https://www.acouplecooks.com/wp-content/uploads/2020/06/Bloody-Mary-007.jpg"/></a>
+                <h3>Le léger</h3> 
+                <a href="./cocktail3.html"><h2>
+                    Virgin Bloody Mary
+                </h2></a>
+                <!-- <p>J'adore écrire des textes qui remplissent des espaces vides, si l'espace est vide je pète un câble.</p> -->
+            </div>
+        </div>
+    </section>
+</body>
+</html>

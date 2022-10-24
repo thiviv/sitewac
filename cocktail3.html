@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cocktails.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <script src="./nav.js" defer></script>
+    <title>Spoococktails</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo"><a href="./index.html">Le Verre-Tige</a></div>
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
+            </button>
+            <ul id="primary-navigation" class="nav primary-navigation" data-visible="false">
+                <li>
+                    <a href="./index.html">Home</a>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Cocktails</a>
+                    <div class="dropdown-content">
+                      <a href="./cocktail1.html">Vampire's Kiss</a>
+                      <a href="./cocktail2.html">Corpse Reviver n°2</a>
+                      <a href="./cocktail3.html">Virgin Bloody Mary</a>
+                    </div>
+                  </li>
+                <li>
+                    <a href="./about.html">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <h1 id="cocktail-name" class="cocktail-name">Virgin Bloody Mary</h1>
+    <section class="content">
+        <main class="side side-1">
+            <p class="main-content cocktail-desc">Si vous cherchez un cocktail élégant et parfaitement dans le thème des soirées de la fin d'Octobre, le <span class="cocktail-name-inline">Vampire's Kiss</span> est un très bon choix. D'un rouge sanguin, c'est pourtant une dose de vodka assimilée avec du sucre et des baies. <br/>Servi dans une coupe Martini.</p>
+            <h1 class="recipe-title">La recette : comment qu'on fait ?</h1>
+            <ol class="main-content recipe">
+                <li>La bordure : recouvrir la bordure du verre d'un peu de grenadine, sur laquelle vous aposerez le sucre. C'est une étape optionnelle, mais elle est recommandée !</li>
+                <li>La boisson : dans un shaker, ajoutez la vodka, la liqueur de Chambord, le jus de canneberge et le jus de citron et des glaçons. Secouez une dizaine de secondes, puis filtrez le contenu dans la coupe Martini.</li>
+                <li>Dégustez !</li>
+            </ol>
+        </main>
+        <aside class="side side-2" role="complementary">
+            <ul class="main-content ingredients">
+                <p>Ingrédients : </p>
+                <li>45ml de vodka</li>
+                <li>30ml de liqueur de Chambord</li>
+                <li>15ml de jus de canneberge (sans sucre)</li>
+                <li>15ml de jus de citron</li>
+                <li>15ml de grenadine</li>
+                <li>Du sucre (pour la bordure)</li>
+            </ul>  
+            <!-- <img class="main-content front-view" src="img/glass.png" alt="front-view"/> -->
+            <div class="slider-container">
+                <div class="slider-wrapper">
+                    <div class="slider">
+                        <img src="https://www.acouplecooks.com/wp-content/uploads/2020/06/Bloody-Mary-017.jpg" alt="" id="slide-1">
+                        <img src="https://www.acouplecooks.com/wp-content/uploads/2020/06/Bloody-Mary-007.jpg" alt="" id="slide-2">
+                        <img src="https://www.acouplecooks.com/wp-content/uploads/2020/06/Bloody-Mary-012.jpg" alt="" id="slide-3">
+                    </div>
+                </div>
+                <div class="slider-nav">
+                    <a href="#slide-1"></a>
+                    <a href="#slide-2"></a>
+                    <a href="#slide-3"></a>
+                </div>
+            </div>
+        </aside>
+
+    </section>
