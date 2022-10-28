@@ -13,3 +13,5 @@ navToggle.addEventListener('click', () => {
 
    }
 })
+
+// la navbar s'ouvre quand on transitionne de normal à mobile, pas trouvé le fix

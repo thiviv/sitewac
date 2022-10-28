@@ -1,6 +1,10 @@
 .content {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    gap: 2%;
+}
+
+.cocktail-page {
     max-width: 1040px;
     margin: auto;
     height: 100%;
@@ -11,12 +15,11 @@
     flex-direction: column;
     justify-content: flex-start;
     gap: 5em; */
-    font-size: 1.4em;
     flex-grow: 5;
 }
 
 .side-2 {
-    min-width: 25ch;
+    max-width: 25rem;
 }
 
 .side {
@@ -28,28 +31,31 @@
 }
 
 .cocktail-name {
-    color:white;
+    color:black;
     font-size: 2rem;
-    text-align: center;
-    background-color:rgb(255, 48, 48);
     padding-top:1em;
-    padding-bottom: 1em;
-    margin-bottom: 2em;
+    padding-bottom: 0.5em;
+    margin-bottom: 0.7em;
+    border-bottom: 1px solid black;
 }
 
 .cocktail-name-inline {
-    color:rgb(255, 48, 48);
+    color: rgb(163, 79, 0);
 }
 
 .cocktail-desc {
     font-style: italic;
-    max-width: 45ch;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
+    margin-bottom: 2.5rem;
+}
+
+.recipe li {
+    text-align: justify;
 }
 
 .ingredients {
-    background:rgb(213, 213, 213);
     padding: 0.4em;
+    font-size: 1.1rem;
     max-width: 100%;
     color:rgb(0, 0, 0);
     border-inline-start: 3px solid;
@@ -57,7 +63,7 @@
     border-image-source:
     radial-gradient(
         circle at top left,
-        rgb(255, 48, 48),
+        rgb(163, 79, 0),
         transparent 50%);
     border-image-slice:1;
     
@@ -74,13 +80,12 @@ ul li {
 
 .slider-container {
     position: relative;
-    max-width: 15rem;
     margin: 0 auto;
 }
 
 .slider {
     display: flex;
-    aspect-ratio: 10/16;
+    aspect-ratio: 16/16;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
@@ -120,4 +125,23 @@ ul li {
 
 .slider-nav a:hover {
     opacity: 1;
+}
+
+@media(max-width: 768px) {
+
+    .content {
+        flex-direction: column;
+        margin: 15%;
+    }
+    
+    .main-content {
+        margin-bottom: 3em;
+    }
+    
+    .slider-container {
+        position: relative;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
 }

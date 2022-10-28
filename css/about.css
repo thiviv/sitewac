@@ -1,0 +1,28 @@
+main {
+    max-width: 1040px;
+    margin: auto;
+    height: 100%;
+    margin-top:2rem;
+}
+
+section {
+    
+    display: flex;
+    gap:5%;
+}
+
+.map {
+    min-width: 75%;
+}
+
+@media(max-width: 768px) {
+    section {
+        flex-direction: column;
+    }
+
+    section p {
+        margin-bottom: 1.5em;
+
+    }
+
+}

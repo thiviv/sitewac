@@ -1,37 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
-    <script src="./nav.js" defer></script>
-    <title>Spoococktails</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/about.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/04b36feceb.js" crossorigin="anonymous"></script>
+        <script src="./nav.js" defer></script>
+        <title>Spoococktails - A proposs</title>
+    </head>
 <body>
     <nav class="navbar">
         <div class="container">
             <div class="logo"><a href="./index.html">Le Verre-Tige</a></div>
-            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
-            </button>
+            <div class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"><i class="fa-solid fa-bars"></i>
+            </div>
             <ul id="primary-navigation" class="nav primary-navigation" data-visible="false">
-                <li>
-                    <a href="./index.html">Home</a>
+                <li class="navlink">
+                    <a href="./index.html"><i class="fa-solid fa-house-chimney"></i> Home</a>
                 </li>
-                <li class="dropdown">
-                    <a href="javascript:void(0)" class="dropbtn">Cocktails</a>
-                    <div class="dropdown-content">
-                      <a href="./cocktail1.html">Vampire's Kiss</a>
-                      <a href="./cocktail2.html">Corpse Reviver n°2</a>
-                      <a href="./cocktail3.html">Virgin Bloody Mary</a>
+                <li class="navlink wide-dropdown dropdown">
+                    <a href="javascript:void(0)" class="dropbtn"><i class="fa-solid fa-martini-glass"></i> Cocktails</a>
+                       <div class="dropdown-content">
+                         <a href="./cocktail1.html">Vampire's Kiss</a>
+                          <a href="./cocktail2.html">Corpse Reviver n°2</a>
+                           <a href="./cocktail3.html">Virgin Bloody Mary</a>
+                        </div>
+                    </li>
+                    <div class="mobile-dropdown"><label for="touch"><li class="cocktails"><i class="fa-solid fa-martini-glass"></i> Cocktails <i class="fa-solid fa-caret-down"></i></li><label>               
+                        <input type="checkbox" id="touch"> 
+
+                        <ul class="slide">
+                            <li><a href="./cocktail1.html">Vampire's Kiss</a></li> 
+                            <li><a href="./cocktail2.html">Corpse Reviver n°2</a></li>
+                            <li><a href="./cocktail3.html">Virgin Bloody Mary</a></li>
+                        </ul>
                     </div>
-                  </li>
-                <li>
-                    <a href="./about.html">About</a>
+                <li class="navlink">
+                    <a href="./about.html"><i class="fa-solid fa-person-falling"></i> About</a>
+                </li>
+                <li class="navlink">
+                    <a href="./form.html"><i class="fa-solid fa-flask-vial"></i> Create your own !</a>
                 </li>
             </ul>
         </div>
     </nav>
+    <main>
+        <section>
+            <p>Hey ! Moi c'est Thibault, et j'ai fait ce site avec du CSS, du bootstrap et pas mal de temps, et j'avais envie de faire un site à la fois vitrine mais avec quelques effets sympas. Ah et à côté, j'ai mis la loca d'un endroit sympa.</p>
+            
+            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2627.2475689485136!2d2.3587152337072483!3d48.815337645436045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6717ff972ae09%3A0x692326b123aa4d9b!2sEpitech%20Paris!5e0!3m2!1sfr!2sfr!4v1666892314567!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+
+            <!-- L'iframe marche pas l'api collabore pas, tant pis -->
+            <div class="map" id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+                <div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div><script>(function () {
+                var setting = {"height":320,"width":620,"zoom":15,"queryString":"Epitech Paris, Rue Pasteur, Le Kremlin-Bicêtre, France","place_id":"ChIJCa5y-X9x5kcRm02qI7EmI2k","satellite":false,"centerCoord":[48.815383668149735,2.3631826499999775],"cid":"0x692326b123aa4d9b","lang":"en","cityUrl":"/france/paris","cityAnchorText":"Map of Paris, Ile-de-France, France","id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"828478"};
+                var d = document;
+                var s = d.createElement('script');
+                s.src = 'https://1map.com/js/script-for-user.js?embed_id=828478';
+                s.async = true;
+                s.onload = function (e) {
+                  window.OneMap.initMap(setting)
+                };
+                var to = d.getElementsByTagName('script')[0];
+                to.parentNode.insertBefore(s, to);
+              })();</script><a href="https://1map.com/map-embed">1 Map</a></div>
+        </section>
+    </main>
+</body>

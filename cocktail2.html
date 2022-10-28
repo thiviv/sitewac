@@ -1,56 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/cocktails.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
-    <script src="./nav.js" defer></script>
-    <title>Spoococktails</title>
-</head>
-<body>
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo"><a href="./index.html">Le Verre-Tige</a></div>
-            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
-            </button>
-            <ul id="primary-navigation" class="nav primary-navigation" data-visible="false">
-                <li>
-                    <a href="./index.html">Home</a>
-                </li>
-                <li class="dropdown">
-                    <a href="javascript:void(0)" class="dropbtn">Cocktails</a>
-                    <div class="dropdown-content">
-                      <a href="./cocktail1.html">Vampire's Kiss</a>
-                      <a href="./cocktail2.html">Corpse Reviver n°2</a>
-                      <a href="./cocktail3.html">Virgin Bloody Mary</a>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/cocktails.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/04b36feceb.js" crossorigin="anonymous"></script>
+        <script src="./nav.js" defer></script>
+        <title>Spoococktails - Corpse Reviver n°2</title>
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo"><a href="./index.html">Le Verre-Tige</a></div>
+                <div class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"><i class="fa-solid fa-bars"></i>
+                </div>
+                <ul id="primary-navigation" class="nav primary-navigation" data-visible="false">
+                    <li class="navlink">
+                        <a href="./index.html"><i class="fa-solid fa-house-chimney"></i> Home</a>
+                    </li>
+                    <li class="navlink wide-dropdown dropdown">
+                        <a href="javascript:void(0)" class="dropbtn"><i class="fa-solid fa-martini-glass"></i> Cocktails</a>
+                           <div class="dropdown-content">
+                             <a href="./cocktail1.html">Vampire's Kiss</a>
+                              <a href="./cocktail2.html">Corpse Reviver n°2</a>
+                               <a href="./cocktail3.html">Virgin Bloody Mary</a>
+                            </div>
+                        </li>
+                        <div class="mobile-dropdown"><label for="touch"><li class="cocktails"><i class="fa-solid fa-martini-glass"></i> Cocktails <i class="fa-solid fa-caret-down"></i></li><label>               
+                            <input type="checkbox" id="touch"> 
+    
+                            <ul class="slide">
+                                <li><a href="./cocktail1.html">Vampire's Kiss</a></li> 
+                                <li><a href="./cocktail2.html">Corpse Reviver n°2</a></li>
+                                <li><a href="./cocktail3.html">Virgin Bloody Mary</a></li>
+                            </ul>
+                        </div>
+                    <li class="navlink">
+                        <a href="./about.html"><i class="fa-solid fa-person-falling"></i> About</a>
+                    </li>
+                    <li class="navlink">
+                        <a href="./form.html"><i class="fa-solid fa-flask-vial"></i> Create your own !</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <section class="cocktail-page">
+            <h1 id="cocktail-name" class="cocktail-name">Corpse Reviver n°2</h1>
+          <p class="cocktail-desc">Si vous cherchez un cocktail élégant et parfaitement dans le thème des soirées de la fin d'Octobre, le <span class="cocktail-name-inline">Vampire's Kiss</span> est un très bon choix. D'un rouge sanguin, c'est pourtant une dose de vodka assimilée avec du sucre et des baies. <br/>Servi dans une coupe Martini.</p>     
+            <div class="content">
+                <main class="side side-1">
+                    <ul class="main-content ingredients">
+                        <p>Ingrédients : </p>
+                        <li>30ml de gin</li>
+                        <li>30ml de Cointreau</li>
+                        <li>30ml de vermouth sec / Lillet blanc</li>
+                        <li>5ml de absinthe (optionnel)</li>
+                        <li>Peau ou tranche d'orange (pour la garniture)</li>
+                    </ul>
+                    <h1 class="recipe-title">La recette : comment qu'on fait ?</h1>
+                    <ol class="main-content recipe">
+                        <li>La boisson : dans un shaker, ajoutez le gin, le Cointreau, le jus de citron, le vermouth sec, l'absinthe et des glaçons. Secouez une dizaine de secondes, puis filtrez le contenu dans la coupe.</li>
+                        <li>La déco : garnissez le verre d'une tranche d'orange.</li>
+                        <li>Dégustez !</li>
+                    </ol>
+                </main>
+            <aside class="side side-2" role="complementary">
+    
+                <!-- <img class="main-content front-view" src="img/glass.png" alt="front-view"/> -->
+                <div class="slider-container">
+                    <div class="slider-wrapper">
+                        <div class="slider">
+                            <img src="https://www.acouplecooks.com/wp-content/uploads/2020/08/Corpse-Reviver-No-2-001.jpg" alt="" id="slide-1">
+                            <img src="https://www.acouplecooks.com/wp-content/uploads/2020/08/Corpse-Reviver-No-2-005.jpg" alt="" id="slide-2">
+                            <img src="https://3.bp.blogspot.com/-qAYgG-SS5uc/WdpfXFJ9b6I/AAAAAAAAHSI/bA5adI8myJMI948LFxpJvWTOFh0wtRJKACLcBGAs/s1600/corpse-reviver-2.jpg" alt="" id="slide-3">
+                        </div>
                     </div>
-                  </li>
-                <li>
-                    <a href="./about.html">About</a>
-                </li>
-            </ul>
+                    <div class="slider-nav">
+                        <a href="#slide-1"></a>
+                        <a href="#slide-2"></a>
+                        <a href="#slide-3"></a>
+                    </div>
+                </div>
+            </aside>
         </div>
-    </nav>
-    <section class="main">
-        <h1 class="cocktail-name">Corpse Reviver n°2</h1>
-        <img class="front-view" alt="front-view"/>
-        <p class="cocktail-desc">Si vous cherchez un cocktail élégant et parfaitement dans le thème des soirées de la fin d'Octobre, le <span class="cocktail-name-inline">Vampire's Kiss</span> est un très bon choix. D'un rouge sanguin, c'est pourtant une dose de vodka assimilée avec du sucre et des baies. <br/>Servi dans une coupe Martini.</p>
-        <ul class="ingredients">
-            <li>30ml de gin</li>
-            <li>30ml de Cointreau</li>
-            <li>30ml de vermouth sec / Lillet blanc</li>
-            <li>5ml de absinthe (optionnel)</li>
-            <li>Peau ou tranche d'orange (pour la garniture)</li>
-        </ul>
-        <ol class="recipe">
-            <li>La boisson : dans un shaker, ajoutez le gin, le Cointreau, le jus de citron, le vermouth sec, l'absinthe et des glaçons. Secouez une dizaine de secondes, puis filtrez le contenu dans la coupe.</li>
-            <li>La déco : garnissez le verre d'une tranche d'orange.</li>
-            <li>Dégustez !</li>
-        </ol>
-        <img class="showcase" alt="image"/>
-    </section>
+    
+        </section>
+    </body>

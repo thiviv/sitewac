@@ -1,6 +1,6 @@
 body {
-    background: linear-gradient(180deg, rgba(56,0,56,1) 51%, rgba(15,15,15,1) 100%);
-    background: rgb(56,0,56);
+    background: rgb(42,27,7);
+    background: linear-gradient(180deg, rgba(42,27,7,1) 0%, rgba(15,15,15,1) 56%);
     color:white;
 
 }
@@ -16,6 +16,22 @@ body {
     margin:50px 5px;
     transition: ease 0.3s;
     position: relative;
+}
+
+.illusbox {
+
+    width: 100%;
+    overflow: hidden;
+}
+
+.illusbox img {
+    filter: grayscale(90%) blur(2px);
+    transition: ease 0.4s;
+}
+
+.illusbox img:hover {
+    filter:grayscale(5%);
+    transform: scale(1.1);
 }
 
 .caption {
@@ -58,13 +74,13 @@ img {
       /* Larger blur radius */
       text-shadow:
       0 0 2px #fff,
-      0 0 10px rgb(201, 0, 141);
+      0 0 10px rgb(201, 121, 0);
     }
     0% {
       /* Smaller blur radius */
       text-shadow:
       0 0 7px #fff,
-      0 0 25px rgb(201, 0, 141);
+      0 0 25px rgb(201, 121, 0);
     }
   }
 
@@ -79,6 +95,7 @@ img {
     font-size: 1.9em;
     color: white;
     font-weight:800;
+    font-family: 'Space Grotesk', sans-serif;
 }
 
 
