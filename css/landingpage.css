@@ -118,5 +118,13 @@ img {
         flex-direction: column;
         align-items: center;
     }
+
+    .illusbox img {
+        filter: none;
+    }
+    
+    .illusbox img:hover {
+        transform: none;
+    }
     
 }

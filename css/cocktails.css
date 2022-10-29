@@ -129,9 +129,14 @@ ul li {
 
 @media(max-width: 768px) {
 
+    .cocktail-name, .cocktail-desc{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
     .content {
         flex-direction: column;
-        margin: 15%;
+        margin: 10%;
     }
     
     .main-content {
@@ -140,8 +145,12 @@ ul li {
     
     .slider-container {
         position: relative;
-        max-width: 100%;
+        min-width: 100%;
         margin: 0 auto;
     }
+/* 
+    .slider img {
+        max-width: 10%;
+    } */
 
 }

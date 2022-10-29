@@ -39,11 +39,11 @@ body {
   } */
 
 
-.logo a {
+#navlogo {
     font-size:3em;
     margin-right: 50px;
     font-weight: bold;
-    font-family: "Caster", cursive;
+    font-family: "Caster", 'Henny Penny', cursive;
     display: flex;
     flex:1;
     justify-content: center;
@@ -215,7 +215,7 @@ body {
         position: fixed;
         inset:0 2% 2% 2%;
         z-index: 980;
-        background:hsl(0 0% 0% / 0.7);
+        background:hsl(0 0% 0% / 0.8);
         backdrop-filter: blur(1rem);
         transform:translateY(-110%);
         transition: transform 0.4s ease-out;
